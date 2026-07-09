@@ -1,0 +1,68 @@
+name: Deploy marketing site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    # Only rebuild when something that affects the marketing build changes.
+    paths:
+      - "apps/frontend/**"
+      - ".github/workflows/deploy-pages.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deploy at a time; don't cancel one that's already live-deploying.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The dashboard/login routes are dynamic (per-tenant data, e.g.
+      # /dashboard/leads/[id]) and can't be statically exported — there's no
+      # fixed list of IDs to pre-render. This deploy is marketing-page-only,
+      # so they're removed from this ephemeral CI checkout before building.
+      # This never touches the real source — it's only ever committed to
+      # the repo, never deleted there; only this disposable runner's copy
+      # loses them for the duration of the build.
+      - name: Strip dashboard/auth routes from this build only
+        run: |
+          rm -rf apps/frontend/src/app/dashboard
+          rm -rf "apps/frontend/src/app/(auth)"
+
+      - name: Build static export
+        working-directory: apps/frontend
+        env:
+          STATIC_EXPORT: "true"
+        run: npx next build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/frontend/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

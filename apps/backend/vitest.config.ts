@@ -1,0 +1,18 @@
+import { defineConfig } from "vitest/config";
+
+export default defineConfig({
+  test: {
+    globals: true,
+    environment: "node",
+    include: ["src/**/__tests__/**/*.test.ts"],
+    coverage: {
+      provider: "v8",
+      reporter: ["text", "lcov"],
+      include: [
+        "src/modules/inbox/**",
+        "src/queues/workers/imap-message.processor.ts",
+        "src/queues/workers/imap-idle.service.ts",
+      ],
+    },
+  },
+});

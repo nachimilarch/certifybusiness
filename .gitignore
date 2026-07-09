@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.next/
+out/
+.env
+.env.local
+*.env.local
+*.log
+coverage/
+.DS_Store
+*.tsbuildinfo
+
+# Backend runtime data — uploaded CSVs and logs contain real contact PII,
+# never belongs in git
+apps/backend/uploads/
+apps/backend/logs/
