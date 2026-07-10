@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: {
-    default: "CertifyBusiness — ISO Certification, Training & Assessment",
-    template: "%s | CertifyBusiness",
+    default: "CertifyBusiness — ODCAPTS ISO Certifications Services",
+    template: "%s | CertifyBusiness by ODCAPTS ISO Certifications Services",
   },
   description:
-    "CertifyBusiness (ODCAPTS ISO Certifications Services) offers ISO standards training, assessment, and certification for organisations of every size — from ODC's full ISO portfolio for medium & large enterprises to APTS's ISO 9001 specialisation for micro & small businesses.",
+    "CertifyBusiness, the certification brand of ODCAPTS ISO Certifications Services, offers ISO standards training, assessment, and certification for organisations of every size — ODC's full portfolio for medium & large enterprises, and APTS's ISO 9001 specialisation for micro & small businesses.",
   icons: {
     icon: "/logo.jpeg",
   },

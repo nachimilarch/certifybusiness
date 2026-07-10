@@ -128,7 +128,7 @@ export default function HomePage() {
           </div>
           <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-4 py-1.5 text-xs font-medium text-teal-50 mb-8">
             <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
-            ISO Standards Training, Assessment &amp; Certification
+            ODCAPTS ISO Certifications Services &mdash; ISO Training, Assessment &amp; Certification
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
             Get certified, whatever
@@ -136,8 +136,7 @@ export default function HomePage() {
             <span className="text-amber-400">the size of your business.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-teal-50/90 max-w-2xl mx-auto leading-relaxed">
-            CertifyBusiness brings together ODC Standards Certifications — a full ISO portfolio for medium &amp; large
-            organisations — and APTS Quality Certifications, an ISO 9001 specialist for micro &amp; small businesses.
+            CertifyBusiness, the certification brand of ODCAPTS ISO Certifications Services, brings together ODC Standards Certifications — a full ISO portfolio for medium &amp; large organisations — and APTS Quality Certifications, an ISO 9001 specialist for micro &amp; small businesses.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -356,7 +355,10 @@ export default function HomePage() {
                   height={44}
                   className="rounded-lg object-contain"
                 />
-                <span className="font-bold text-white">CertifyBusiness</span>
+                <span className="leading-tight">
+                  <span className="block font-bold text-white text-base">CertifyBusiness</span>
+                  <span className="block text-xs text-teal-300 font-medium">ODCAPTS ISO Certifications Services</span>
+                </span>
               </div>
               <p className="text-sm leading-relaxed">
                 ISO standards training, assessment, and certification — via ODC Standards Certifications and APTS Quality Certifications.
@@ -417,7 +419,7 @@ export default function HomePage() {
 
           <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs">
-              &copy; {new Date().getFullYear()} ODCAPTS ISO Certifications Services. Trading as CertifyBusiness. All rights reserved.
+              &copy; {new Date().getFullYear()} ODCAPTS ISO Certifications Services (CertifyBusiness). All rights reserved.
             </p>
             <p className="text-xs flex items-center gap-1.5">
               <CheckCircle className="h-3.5 w-3.5" /> Serving Micro, Small, Medium &amp; Large Enterprises

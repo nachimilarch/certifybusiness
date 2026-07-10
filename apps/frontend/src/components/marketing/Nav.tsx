@@ -28,7 +28,10 @@ export function MarketingNav() {
             className="rounded-lg object-contain"
             priority
           />
-          <span className="font-bold text-gray-900 text-lg">CertifyBusiness</span>
+          <span className="leading-tight">
+            <span className="block font-bold text-gray-900 text-base">CertifyBusiness</span>
+            <span className="block text-xs text-teal-700 font-medium">ODCAPTS ISO Certifications Services</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}
