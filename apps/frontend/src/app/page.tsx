@@ -30,7 +30,7 @@ import { EnquiryForm } from "../components/marketing/EnquiryForm";
 
 const CONTACT = {
   name: "Mrs. J Naga Madhavi",
-  title: "CEO, ODC APTS ISO Certification Services",
+  title: "CEO, ODCAPTS ISO Certifications Services",
   email: "madhavi@odchyd.com",
   phones: ["9866182520", "9391147697"],
 };
@@ -119,7 +119,7 @@ export default function HomePage() {
           <div className="mb-8 flex justify-center">
             <Image
               src="/logo.jpeg"
-              alt="CertifyBusiness logo"
+              alt="ODCAPTS ISO Certifications Services"
               width={110}
               height={110}
               className="rounded-2xl shadow-lg"
@@ -136,7 +136,7 @@ export default function HomePage() {
             <span className="text-amber-400">the size of your business.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-teal-50/90 max-w-2xl mx-auto leading-relaxed">
-            CertifyBusiness brings together ODC Standards Certifications — a full ISO portfolio for medium &amp; large
+            ODCAPTS ISO Certifications Services brings together ODC Standards Certifications — a full ISO portfolio for medium &amp; large
             organisations — and APTS Quality Certifications, an ISO 9001 specialist for micro &amp; small businesses.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -351,12 +351,15 @@ export default function HomePage() {
               <div className="flex items-center gap-2.5 mb-4">
                 <Image
                   src="/logo.jpeg"
-                  alt="CertifyBusiness logo"
+                  alt="ODCAPTS ISO Certifications Services"
                   width={44}
                   height={44}
                   className="rounded-lg object-contain"
                 />
-                <span className="font-bold text-white">CertifyBusiness</span>
+                <span className="font-bold text-white leading-tight">
+                  ODCAPTS ISO<br />
+                  Certifications Services
+                </span>
               </div>
               <p className="text-sm leading-relaxed">
                 ISO standards training, assessment, and certification — via ODC Standards Certifications and APTS Quality Certifications.
@@ -417,7 +420,7 @@ export default function HomePage() {
 
           <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs">
-              &copy; {new Date().getFullYear()} CertifyBusiness — ODC APTS ISO Certification Services. All rights reserved.
+              &copy; {new Date().getFullYear()} ODCAPTS ISO Certifications Services. All rights reserved.
             </p>
             <p className="text-xs flex items-center gap-1.5">
               <CheckCircle className="h-3.5 w-3.5" /> Serving Micro, Small, Medium &amp; Large Enterprises

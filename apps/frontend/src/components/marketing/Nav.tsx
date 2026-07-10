@@ -22,13 +22,16 @@ export function MarketingNav() {
         <Link href="/" className="flex items-center gap-2.5">
           <Image
             src="/logo.jpeg"
-            alt="CertifyBusiness logo"
+            alt="ODCAPTS ISO Certifications Services"
             width={48}
             height={48}
             className="rounded-lg object-contain"
             priority
           />
-          <span className="font-bold text-gray-900 text-lg">CertifyBusiness</span>
+          <span className="font-bold text-gray-900 text-lg leading-tight">
+            ODCAPTS ISO<br className="hidden sm:block" />
+            <span className="text-teal-700">Certifications Services</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}
