@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 const FAQS = [
   {
     q: "What's the difference between ODC Standards Certifications and APTS Quality Certifications?",
-    a: "They serve different-sized organisations under the same ODCAPTS ISO Certifications Services umbrella. ODC Standards Certifications works with medium and large organisations across the full portfolio of 21+ ISO standards — quality, food safety, information security, business continuity, privacy, environment, health & safety, energy, IT service management, CSR, asset management, facility management, medical devices, and more. APTS Quality Certifications focuses exclusively on micro and small businesses, specialising in one standard — ISO 9001 (Quality Management Systems) — so smaller teams get a focused, affordable path to certification.",
+    a: "They serve different-sized organisations under the same CertifyBusiness umbrella. ODC Standards Certifications works with medium and large organisations across the full portfolio of 21+ ISO standards — quality, food safety, information security, business continuity, privacy, environment, health & safety, energy, IT service management, CSR, asset management, facility management, medical devices, and more. APTS Quality Certifications focuses exclusively on micro and small businesses, specialising in one standard — ISO 9001 (Quality Management Systems) — so smaller teams get a focused, affordable path to certification.",
   },
   {
     q: "Which ISO standards do you cover?",
